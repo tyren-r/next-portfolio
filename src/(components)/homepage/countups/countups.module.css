@@ -1,0 +1,8 @@
+#countupsContainer{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+.countup{
+    text-align: center;
+}
