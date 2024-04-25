@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function RootLayout(props) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" style={{minHeight:'100%'}}>
+      <body style={{margin:"0px 0px 0px 0px", minHeight:'100vh'}}>
         <AppRouterCacheProvider options={{ enableCssLayer: true,  key: 'css' }}>
           <ThemeProvider theme={theme}>
             <NavBar/>

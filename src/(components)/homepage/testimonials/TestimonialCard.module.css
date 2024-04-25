@@ -1,0 +1,15 @@
+.cardContainer{
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 10px 25px 10px;
+    border: 1px solid rgb(211, 180, 5);
+
+}
+.cardContent{
+    text-align: center;
+}
+

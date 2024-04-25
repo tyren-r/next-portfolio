@@ -1,7 +1,8 @@
 import { Typography } from "@mui/material";
 import styles from "./page.module.css";
 import Avatar from '@mui/material/Avatar';
-import CountUps from "@/(components)/homepage/CountUps";
+import CountUps from "@/(components)/homepage/countups/CountUps";
+import Testimonials from "@/(components)/homepage/testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         A Full Stack Developer located in Denver, CO.
       </Typography>
       <CountUps/>
+      <Testimonials/>
     </main>
   );
 }
