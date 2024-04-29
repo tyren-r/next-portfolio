@@ -48,7 +48,7 @@ function NavBar() {
   };
 
   return (
-    <AppBar sx={{backgroundColor:'black', minHeight:'7vh'}} position="static">
+    <AppBar sx={{backgroundColor:'black', minHeight:'7vh',  flexGrow: 0,flexShrink: 0}} position="static">
       <Container  maxWidth="xl">
         <Toolbar  disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

@@ -6,8 +6,9 @@ import Testimonials from "@/(components)/homepage/testimonials/Testimonials";
 
 export default function Home() {
   return (
+    <>
     <main className={styles.main}>
-       <Avatar sx={{height:150,width:150,marginBottom:'10px'}} alt="Tyren Rhinehart" src="/resume-pic.jpg" />
+       <Avatar id={styles.avatar} alt="Tyren Rhinehart" src="/resume-pic.jpg" />
       <Typography mx={5} color={"white"} variant="h4" >
         Hi, I'm Tyren!
       </Typography>
@@ -15,7 +16,8 @@ export default function Home() {
         A Full Stack Developer located in Denver, CO.
       </Typography>
       <CountUps/>
-      <Testimonials/>
     </main>
+    <Testimonials/>
+    </>
   );
 }

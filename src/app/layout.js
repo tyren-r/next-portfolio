@@ -2,6 +2,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import NavBar from '@/(components)/NavBar';
 import theme from '../theme';
+import styles from './layout.module.css';
 
 export const metadata = {
   title: "Tyren Rhinehart, a full-stack developer located in Denver Colorado",
@@ -10,12 +11,14 @@ export const metadata = {
 
 export default function RootLayout(props) {
   return (
-    <html lang="en" style={{minHeight:'100%'}}>
-      <body style={{margin:"0px 0px 0px 0px", minHeight:'100vh'}}>
+    <html id={styles.html} lang="en">
+      <body id={styles.body}>
         <AppRouterCacheProvider options={{ enableCssLayer: true,  key: 'css' }}>
           <ThemeProvider theme={theme}>
+            <div id={styles.wrapper}>
             <NavBar/>
             {props.children}
+            </div>
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
