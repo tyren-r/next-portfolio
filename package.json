@@ -18,11 +18,16 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@mui/material-nextjs": "^5.15.11",
+    "@react-google-maps/api": "^2.19.3",
+    "crypto-js": "^4.2.0",
     "next": "^14.2.3",
     "react": "^18",
     "react-countup": "^6.5.3",
     "react-dom": "^18",
-    "react-multi-carousel": "^2.8.5"
+    "react-dropzone": "^14.2.3",
+    "react-multi-carousel": "^2.8.5",
+    "react-spinners": "^0.13.8",
+    "react-tooltip": "^5.26.4"
   },
   "devDependencies": {
     "eslint": "^8",

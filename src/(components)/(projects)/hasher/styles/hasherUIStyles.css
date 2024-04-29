@@ -1,0 +1,45 @@
+
+.uploader{
+  background-color: #FAF9F9;
+  border:2px dashed grey;
+  padding: 20px;
+  margin:3% 6%;
+  cursor: pointer;
+}
+
+img {
+  height:8%;
+  width:8%;
+}
+
+table {
+  table-layout: fixed;
+  width: 90%; 
+  margin: auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+td, th {
+  border: 1px solid grey;
+  padding: 4px;
+}
+td{
+  text-align: left;
+  word-wrap: break-word;
+  border: 1px solid grey;
+  font-size: small;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+button {
+  padding:3px;
+  width:60%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: small;
+}
+.buttonCell {
+  text-align: center;
+}
+
