@@ -10,7 +10,7 @@ export default function Home() {
     <main className={styles.main}>
        <Avatar id={styles.avatar} alt="Tyren Rhinehart" src="/resume-pic.jpg" />
       <Typography mx={5} color={"white"} variant="h4" >
-        Hi, I'm Tyren!
+        Hi, I&apos;m Tyren!
       </Typography>
       <Typography color={"white"} variant="h4" >
         A Full Stack Developer located in Denver, CO.

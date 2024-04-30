@@ -1,5 +1,6 @@
 'use client'
-import { Tooltip } from 'react-tooltip'
+import { Tooltip } from 'react-tooltip';
+import Image from 'next/image';
 
 const UserMarker = (props) => (
     
@@ -14,9 +15,10 @@ const UserMarker = (props) => (
             id="user"
             style={{padding:'6px',fontSize:'11px'}}
              />
-        <img
+        <Image
             alt="your location"
             height={20}
+            width={20}
             src="/user.png"
         />
     </a>

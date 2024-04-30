@@ -10,7 +10,7 @@ const TestimonialCard = (props) => (
 <Card className={styles.cardContainer} variant="outlined">
     <CardContent className={styles.cardContent}>
      <Typography  className={styles.testimonialText}>
-     <strong>"{props.testimonial}"</strong>
+     <strong>&quot;{props.testimonial}&quot;</strong>
      </Typography>
 
      <Typography>

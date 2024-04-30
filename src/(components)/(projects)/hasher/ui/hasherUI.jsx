@@ -4,6 +4,7 @@ import styles from '../styles/hasherUIStyles.css';
 import FileHasherLogic from '../logic/useHasherLogic';
 import { useDropzone } from 'react-dropzone';
 import ClipLoader from "react-spinners/ClipLoader";
+import Image from 'next/image';
 
 const FileHasherUI = () => {
   const { hashFiles, deleteFile, hashedFiles, isLoading } = FileHasherLogic();
@@ -26,7 +27,7 @@ const FileHasherUI = () => {
   files.length === 0 ? (
     <div className={styles.uploader}>
       <input {...getInputProps()} />
-      <img alt="download" src="/download.png" />
+      <Image   width={0} height={0} sizes="8%" style={{height:"8%", width:"8%"}} alt="download"  src="/download.png" />
       <h2>Click to Choose a File, or Drop It Here</h2>
     </div>
   ) : 

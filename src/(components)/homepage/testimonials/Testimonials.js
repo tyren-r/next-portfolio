@@ -33,8 +33,8 @@ const Testimonials = () => {
         autoPlaySpeed={5000}
         responsive={responsive}
         arrows={false}>
-            {testimonalObjects.map((testimonalObject,i) => (
-              <TestimonialCard writer={testimonalObject.author} testimonial={testimonalObject.text}/>
+            {testimonalObjects.map((testimonalObject) => (
+              <TestimonialCard key={testimonalObject.author} writer={testimonalObject.author} testimonial={testimonalObject.text}/>
             ))}
         </Carousel>
     )

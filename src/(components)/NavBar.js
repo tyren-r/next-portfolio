@@ -91,8 +91,8 @@ function NavBar() {
               }}
             >
               {pages.map((page) => (
-                <Link href={page.link} style={{textDecoration: 'none',color: 'white'}}>
-                <MenuItem key={page.text} onClick={handleCloseNavMenu}>
+                <Link key={page.text} href={page.link} style={{textDecoration: 'none',color: 'white'}}>
+                <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page.text}</Typography>
                 </MenuItem>
                 </Link>

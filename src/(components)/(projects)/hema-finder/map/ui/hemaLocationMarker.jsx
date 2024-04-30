@@ -1,5 +1,6 @@
 'use client'
 import { Tooltip } from 'react-tooltip'
+import Image from 'next/image';
 
 const HemaMarker = (props) => (
     
@@ -16,9 +17,10 @@ const HemaMarker = (props) => (
             id="club"
             style={{padding:'6px',fontSize:'11px'}}
              />
-        <img
+        <Image
         alt={props.name}
             height={20}
+            width={20}
             src="/location-pin.png"
         />
     </a>

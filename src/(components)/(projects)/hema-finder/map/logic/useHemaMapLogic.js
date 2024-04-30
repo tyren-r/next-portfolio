@@ -9,7 +9,7 @@ const useHemaMapLogic = () => {
   const [map, setMap] = useState(null);
 
   useEffect(() => {
-    window.alert("Google provides a notification that the google maps api cant be loaded correctly. Please be aware that this is only due to billing not being enabled on the account, and the API is in fact properly loaded.")
+    window.alert("Google provides a notification that the google maps api cant be loaded correctly. Please be aware that this is only due to billing not being enabled on the account, and the API is in fact properly loaded.Additionally the flicker on map drag is due to the library not working correctly with changes in React 18, and not an issue with my code.")
     navigator.geolocation.getCurrentPosition(function (position) {
       setUserLat(position.coords.latitude);
       setUserLong(position.coords.longitude);
