@@ -1,0 +1,16 @@
+#main{
+    background-color:#2A4365;
+    flex-grow:1;
+    display:flex;
+    justify-content:center;
+}
+.projectCard{
+    max-width: 600px;
+    margin:10px 10px 10px 10px;
+    min-height:300px;
+    transition: all .2s ease-in-out;
+}
+
+.projectCard:hover { 
+    transform: scale(1.05); 
+    }

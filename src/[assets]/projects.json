@@ -1,0 +1,23 @@
+[
+    {
+        "name": "React File Hasher",
+        "type": "side",
+        "link": "/projects/file-hasher",
+        "description": "A basic file hasher built in React which hashes uploaded files with popular encryption methods.",
+        "image": "/hasher-pic.png"
+    },
+    {
+        "name": "Hema Club Finder",
+        "type": "side",
+        "link": "/projects/hema-finder",
+        "description": "A React/Google Maps applet which displays the users location, and a few HEMA clubs from across the country.",
+        "image": "/hema-finder-pic.png"
+    },
+    {
+        "name": "Star Wars Searcher",
+        "type": "side",
+        "link": "/projects/star-wars-searcher",
+        "description": "This React applet presents the info of the Star Wars API in a user friendly format, allowing the user to search for a person from the Star Wars Universe.",
+        "image": "/starwars-searcher.png"
+    }
+]

@@ -9,8 +9,8 @@ import styles from './TestimonialCard.module.css';
 const TestimonialCard = (props) => (
 <Card className={styles.cardContainer} variant="outlined">
     <CardContent className={styles.cardContent}>
-     <Typography className={styles.testimonialText}>
-    "{props.testimonial}"
+     <Typography  className={styles.testimonialText}>
+     <strong>"{props.testimonial}"</strong>
      </Typography>
 
      <Typography>

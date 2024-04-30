@@ -12,8 +12,9 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Image from 'next/image';
-// import { upworklogo } from '@/[assets]/upworklogo';
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareUpwork } from '@fortawesome/free-brands-svg-icons';
 
 const socials = [
   {
@@ -26,7 +27,16 @@ const socials = [
   },
 ];
 
-const pages = ['About', 'Projects'];
+const pages = [
+  {
+    text:'Home',
+   link: "/"
+  }, 
+   {
+    text:'Projects',
+    link: '/projects-list'
+  },
+  ];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -81,9 +91,11 @@ function NavBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <Link href={page.link} style={{textDecoration: 'none',color: 'white'}}>
+                <MenuItem key={page.text} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.text}</Typography>
                 </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
@@ -92,21 +104,26 @@ function NavBar() {
             <Box sx={{display:'flex'}}>
               {socials.map((website,i) => (
                 <MenuItem key={i}  onClick={handleCloseUserMenu}>
-                  <a href={website.url}>
+                  <a target='_blank' href={website.url}>
                   <website.icon sx={{height:35,width:35, color:'white'}} />
                   </a>
                 </MenuItem>
               ))}
+              <MenuItem  onClick={handleCloseUserMenu}>
+                <a target='_blank' href="https://www.upwork.com/freelancers/~017ef3bb88c40a19f3">
+              <FontAwesomeIcon icon={faSquareUpwork} style={{height:33,width:33}}/>
+              </a>
+              </MenuItem>
              {/* upwork here */}
               </Box>
               <Box sx={{display:'flex'}}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.text}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <Link href={page.link}> {page.text}</Link>
               </Button>
             ))}
             </Box>

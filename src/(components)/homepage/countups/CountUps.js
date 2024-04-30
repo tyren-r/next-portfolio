@@ -7,9 +7,9 @@ const CountUps = () => {
   const countupsData = [
     {number:5,
     text:"Years Of Experience"},
-    {number:30,
+    {number:15,
     text:"Happy Clients"},
-    {number:60,
+    {number:45,
     text:"Projects Completed"}
   ];
   return(
@@ -22,7 +22,6 @@ const CountUps = () => {
               <Typography mt={2} color={"white"} variant="h4">
                 {countup.text}
               </Typography>
-                
             </article>
       ))}
   </Box>

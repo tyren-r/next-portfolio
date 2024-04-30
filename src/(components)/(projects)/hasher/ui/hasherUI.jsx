@@ -18,7 +18,7 @@ const FileHasherUI = () => {
       <td >{hashedFile['file_name']}</td>
       {/* order of files wont change, so index as key is okay here */}
       {fileArrayKeys.map((fileKey,index)=><td key={index} align="right">{hashedFile[fileKey] ? (hashedFile[fileKey]) : ('NA')}</td>)}
-      <td align="right" className={styles.buttonCell}><button onClick={(e) => { e.stopPropagation(); deleteFile(hashedFile) }}><b>Delete</b></button></td>
+      <td style={{textAlign:'center'}} ><button onClick={(e) => { e.stopPropagation(); deleteFile(hashedFile) }}><b>Delete</b></button></td>
     </tr>
   ));
 
