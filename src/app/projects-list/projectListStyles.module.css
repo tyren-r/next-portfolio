@@ -1,5 +1,6 @@
 #main{
-    background-color:#2A4365;
+    background: rgb(42,67,101);
+    background: linear-gradient(90deg, rgba(42,67,101,1) 0%, rgba(50,122,193,1) 50%, rgba(0,155,255,1) 100%);
     flex-grow:1;
     display:flex;
     justify-content:center;
@@ -9,6 +10,7 @@
     margin:10px 10px 10px 10px;
     min-height:300px;
     transition: all .2s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .projectCard:hover { 

@@ -9,7 +9,6 @@ const UserMarker = (props) => (
         rel="noreferrer"
         data-tooltip-id="user"
         data-tooltip-content="Your Location"
-              
         >
             <Tooltip
             id="user"

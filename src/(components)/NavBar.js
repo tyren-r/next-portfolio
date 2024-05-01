@@ -101,6 +101,17 @@ function NavBar() {
           </Box>
 
           <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow:1, alignItems:'center', justifyContent:'space-between' }}>
+              <Box sx={{display:'flex'}}>
+            {pages.map((page) => (
+              <Button
+                key={page.text}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                <Link href={page.link}> {page.text}</Link>
+              </Button>
+            ))}
+            </Box>
             <Box sx={{display:'flex'}}>
               {socials.map((website,i) => (
                 <MenuItem key={i}  onClick={handleCloseUserMenu}>
@@ -114,19 +125,7 @@ function NavBar() {
               <FontAwesomeIcon icon={faSquareUpwork} style={{height:33,width:33}}/>
               </a>
               </MenuItem>
-             {/* upwork here */}
               </Box>
-              <Box sx={{display:'flex'}}>
-            {pages.map((page) => (
-              <Button
-                key={page.text}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                <Link href={page.link}> {page.text}</Link>
-              </Button>
-            ))}
-            </Box>
           </Box>
         </Toolbar>
       </Container>
