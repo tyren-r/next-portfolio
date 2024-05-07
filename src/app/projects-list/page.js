@@ -11,7 +11,7 @@ import styles from './projectListStyles.module.css';
 
 const ProjectsList = () => (
     <Box id={styles.main} >
-       <Grid container  my={2} justifyContent='center'  >
+       <Grid container mx={1} spacing={2} my={2} >
     {projectObjects.map((project)=>(
       <Grid item key={project.name}  xs={12}  md={4}>
         <Link href={project.link}>
