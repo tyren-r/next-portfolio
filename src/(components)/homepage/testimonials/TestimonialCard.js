@@ -11,7 +11,7 @@ const TestimonialCard = (props) => (
      <Typography  sx={{
     fontSize: {
       sm: 15,
-      xs: 10
+      xs: 12
     }
   }}>
      <strong>&quot;{props.testimonial}&quot;</strong>
@@ -21,7 +21,7 @@ const TestimonialCard = (props) => (
      sx={{
     fontSize: {
       sm: 15,
-      xs: 10
+      xs: 12
     }
   }}>
      - {props.writer}

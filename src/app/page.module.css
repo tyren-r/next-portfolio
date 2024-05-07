@@ -13,10 +13,10 @@
   text-align: center;
 }
 #avatar{
-  margin-top: 20vh;
   margin-bottom:15px;
 }
 
 .text{
   text-shadow: 1px 1px 2px black;
+  text-align: center;
 }

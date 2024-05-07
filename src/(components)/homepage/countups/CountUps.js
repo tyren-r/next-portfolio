@@ -13,13 +13,13 @@ const CountUps = () => {
     text:"Projects Completed"}
   ];
   return(
-    <Box mt={5} id={styles.countupsContainer}>
+    <Box mt={{xs:3,md:5}} id={styles.countupsContainer}>
       {countupsData.map((countup,i)=>(
               <article className={styles.countup} key={i}>
               <Typography className={styles.numberText} color={"white"} sx={{ typography: { md:'h3',sm: 'h4', xs: 'h5' } }} >
               <CountUp end={countup.number}/><br/>
               </Typography>
-              <Typography className={styles.text} mt={2} color={"white"} sx={{ typography: { md:'h4',sm: 'h5', xs: 'p' } }} >
+              <Typography className={styles.text} mt={{xs:1,md:2}} color={"white"} sx={{ typography: { md:'h4',sm: 'h5', xs: 'subtitle1' } }} >
                 {countup.text}
               </Typography>
             </article>
