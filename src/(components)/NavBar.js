@@ -86,6 +86,9 @@ function NavBar() {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
+              slotProps={{
+                root: { sx: { '.MuiList-root': { backgroundColor: 'black' } } },
+              }}
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}

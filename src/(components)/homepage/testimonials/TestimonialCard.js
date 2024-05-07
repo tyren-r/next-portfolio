@@ -1,5 +1,4 @@
 'use client'
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
@@ -9,11 +8,22 @@ import styles from './TestimonialCard.module.css';
 const TestimonialCard = (props) => (
 <Card className={styles.cardContainer} variant="outlined">
     <CardContent className={styles.cardContent}>
-     <Typography  className={styles.testimonialText}>
+     <Typography  sx={{
+    fontSize: {
+      sm: 15,
+      xs: 10
+    }
+  }}>
      <strong>&quot;{props.testimonial}&quot;</strong>
      </Typography>
 
-     <Typography>
+     <Typography
+     sx={{
+    fontSize: {
+      sm: 15,
+      xs: 10
+    }
+  }}>
      - {props.writer}
      </Typography>
 

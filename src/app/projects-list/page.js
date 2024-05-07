@@ -1,18 +1,19 @@
 import projectObjects from '../../[assets]/projects.json';
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Link from 'next/link';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import styles from './projectListStyles.module.css';
 
 const ProjectsList = () => (
-    <div id={styles.main}>
+    <Box id={styles.main} >
+       <Grid container  my={2} justifyContent='center'  >
     {projectObjects.map((project)=>(
-        <div key={project.name}>
+      <Grid item key={project.name}  xs={12}  md={4}>
         <Link href={project.link}>
         <Card className={styles.projectCard}>
         <CardMedia
@@ -30,9 +31,10 @@ const ProjectsList = () => (
         </CardContent>
       </Card>
       </Link>
-      </div>
+      </Grid>
     ))}
-    </div>
+    </Grid>
+    </Box>
 )
 
 export default ProjectsList;

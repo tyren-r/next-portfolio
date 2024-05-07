@@ -16,10 +16,10 @@ const CountUps = () => {
     <Box mt={5} id={styles.countupsContainer}>
       {countupsData.map((countup,i)=>(
               <article className={styles.countup} key={i}>
-              <Typography className={styles.numberText} color={"white"} variant="h3">
+              <Typography className={styles.numberText} color={"white"} sx={{ typography: { md:'h3',sm: 'h4', xs: 'h5' } }} >
               <CountUp end={countup.number}/><br/>
               </Typography>
-              <Typography className={styles.text} mt={2} color={"white"} variant="h4">
+              <Typography className={styles.text} mt={2} color={"white"} sx={{ typography: { md:'h4',sm: 'h5', xs: 'p' } }} >
                 {countup.text}
               </Typography>
             </article>
